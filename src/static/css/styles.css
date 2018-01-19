@@ -6,7 +6,7 @@ ul.topnav {
   font-size: 14px;
   height: 40px;
   justify-content: space-around;
-  opacity: .8; }
+  opacity: 0.8; }
   ul.topnav li {
     list-style: none; }
     ul.topnav li a {
@@ -32,7 +32,7 @@ ul.topnav li.dropdownIcon {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    opacity: .8;
+    opacity: 0.8;
     position: relative; }
     ul.responsive li {
       display: inline;
@@ -47,7 +47,6 @@ ul.topnav li.dropdownIcon {
         text-decoration: none; }
 
   ul.responsive li.dropdownIcon {
-    color: purple;
     position: absolute;
     top: 0;
     right: 0;
@@ -68,7 +67,7 @@ ul.topnav li.dropdownIcon {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    opacity: .8;
+    opacity: 0.8;
     position: relative; }
     ul.responsive li {
       display: inline;
@@ -83,10 +82,9 @@ ul.topnav li.dropdownIcon {
         text-decoration: none; }
 
   ul.responsive li.dropdownIcon {
-    color: purple;
+    padding-right: 10px;
     position: absolute;
-    top: 0;
     right: 0;
-    padding-right: 10px; } }
+    top: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

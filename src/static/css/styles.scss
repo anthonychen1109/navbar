@@ -1,18 +1,20 @@
+@import "variables";
+
 // ################### NAVBAR #####################
 
 ul.topnav {
   align-items: center;
-  background-color: black;
-  color: white;
+  background-color: $nav-background-color;
+  color: $nav-anchor-color;
   display: flex;
-  font-size: 14px;
-  height: 40px;
+  font-size: $nav-font-size;
+  height: $nav-height;
   justify-content: space-around;
-  opacity: .8;
+  opacity: $opacity;
   li {
     list-style: none;
     a {
-      color: white;
+      color: $nav-anchor-color;
       text-decoration: none;
     }
   }
@@ -37,38 +39,37 @@ ul.topnav {
     }
     li.dropdownIcon {
       display: block;
-      padding-right: 10px;
+      padding-right: $nav-padding;
     }
   }
 
   ul.responsive {
-    background-color: black;
+    background-color: $nav-background-color;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    opacity: .8;
+    opacity: $opacity;
     position: relative;
     li {
        display: inline;
        list-style: none;
        float: none;
        a {
-           color: white;
+           color: $nav-anchor-color;
            display: block;
-           font-size: 14px;
-           margin-bottom: 10px;
-           padding-top: 10px;
+           font-size: $nav-font-size;
+           margin-bottom: $nav-margin;
+           padding-top: $nav-padding;
            text-decoration: none;
          }
      }
   }
 
   ul.responsive li.dropdownIcon {
-    color: purple;
     position: absolute;
     top: 0;
     right: 0;
-    padding-right: 10px;
+    padding-right: $nav-padding;
   }
 }
 
@@ -83,37 +84,36 @@ ul.topnav {
     }
     li.dropdownIcon {
       display: block;
-      padding-right: 10px;
+      padding-right: $nav-padding;
     }
   }
 
   ul.responsive {
-    background-color: black;
+    background-color: $nav-background-color;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    opacity: .8;
+    opacity: $opacity;
     position: relative;
     li {
        display: inline;
        list-style: none;
        float: none;
        a {
-           color: white;
+           color: $nav-anchor-color;
            display: block;
-           font-size: 14px;
-           margin-bottom: 10px;
-           padding-top: 10px;
+           font-size: $nav-font-size;
+           margin-bottom: $nav-margin;
+           padding-top: $nav-padding;
            text-decoration: none;
          }
      }
   }
 
   ul.responsive li.dropdownIcon {
-    color: purple;
+    padding-right: $nav-padding;
     position: absolute;
-    top: 0;
     right: 0;
-    padding-right: 10px;
+    top: 0;
   }
 }
