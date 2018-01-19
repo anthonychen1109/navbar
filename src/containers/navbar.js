@@ -12,7 +12,7 @@ class Navbar extends Component {
   dropdownMenu() {
     let x = document.getElementById('dropdownClick');
     if (x.className === 'topnav') {
-      x.className = 'responsive';
+      x.className = 'responsive animated slideInDown';
     } else {
       x.className = 'topnav';
     }
@@ -29,7 +29,7 @@ class Navbar extends Component {
           <li><a href="#">Order Online</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li className="dropdownIcon">
+          <li id="test" className="dropdownIcon">
             <a href="javascript:void(0);"
               onClick={this.dropdownMenu}
               >
