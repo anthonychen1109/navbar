@@ -6,7 +6,8 @@ ul.topnav {
   font-size: 14px;
   height: 40px;
   justify-content: space-around;
-  opacity: 0.8; }
+  opacity: 0.8;
+  padding-left: 0; }
   ul.topnav li {
     list-style: none; }
     ul.topnav li a {
