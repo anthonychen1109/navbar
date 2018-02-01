@@ -50,7 +50,7 @@ class Footer extends Component {
     return (
       <nav>
         <ul className="footer">
-          <li onClick={this.openHoursModal}>123 footer rd. flushing NY, 11354</li>
+          <li>123 footer rd. flushing NY, 11354</li>
             <li className="footer-hours" onClick={this.openHoursModal}>
               <a href="#">Hours</a>
             </li>

@@ -17,6 +17,10 @@ ul.topnav {
   justify-content: space-around;
   opacity: $opacity;
   padding-left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9000;
   li {
     list-style: none;
     a {
@@ -77,7 +81,8 @@ ul.modal-hours {
 
 // ################### MOBILE #####################
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 800px) {
+// ################### NAVBAR #####################
   ul.topnav {
     align-items: center;
     li:not(:nth-child(1)) {
@@ -98,7 +103,9 @@ ul.modal-hours {
     flex-direction: column;
     justify-content: space-around;
     opacity: $opacity;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
     li {
        display: inline;
        list-style: none;
@@ -119,88 +126,6 @@ ul.modal-hours {
     top: 0;
     right: 0;
     padding-right: $nav-padding;
-  }
-
-  ul.footer {
-    li {
-      display: none;
-    }
-  }
-
-  ul.footer {
-    li.footer-hours {
-      display: block;
-    }
-    li.footer-pin {
-      display: block;
-    }
-    li.footer-tel {
-      display: block;
-    }
-  }
-
-}
-
-@media only screen and (max-width: 480px) {
-  ul.topnav {
-    align-items: center;
-    li:not(:nth-child(1)) {
-      display: none;
-    }
-    li.logo {
-      margin: 0 auto;
-    }
-    li.dropdownIcon {
-      display: block;
-      padding-right: $nav-padding;
-    }
-  }
-
-  ul.responsive {
-    background-color: $nav-background-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    opacity: $opacity;
-    position: relative;
-    li {
-       display: inline;
-       list-style: none;
-       float: none;
-       a {
-           color: $nav-anchor-color;
-           display: block;
-           font-size: $nav-font-size;
-           margin-bottom: $nav-margin;
-           padding-top: $nav-padding;
-           text-decoration: none;
-         }
-     }
-  }
-
-  ul.responsive li.dropdownIcon {
-    padding-right: $nav-padding;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  ul.footer {
-    li {
-      display: none;
-    }
-  }
-
-  ul.footer {
-    li.footer-hours {
-      display: block;
-    }
-    li.footer-pin {
-      display: block;
-    }
-    li.footer-tel {
-      display: block;
-    }
   }
 
 }
