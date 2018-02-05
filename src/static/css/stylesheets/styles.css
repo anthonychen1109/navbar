@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul.topnav {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  height: 40px;
+  justify-content: space-around;
+  opacity: 0.8;
+  padding-left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9000; }
+  ul.topnav li {
+    list-style: none; }
+    ul.topnav li a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase; }
+
+ul.topnav li.dropdownIcon {
+  display: none; }
+
+.footer {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  height: 40px;
+  justify-content: space-around;
+  opacity: 0.8; }
+  .footer li {
+    list-style: none;
+    text-transform: uppercase; }
+    .footer li a {
+      color: white;
+      text-decoration: none; }
+
+ul.footer {
+  bottom: 0;
+  padding-left: 0;
+  position: fixed;
+  width: 100%; }
+  ul.footer li.footer-hours {
+    display: none; }
+  ul.footer li.footer-pin {
+    display: none; }
+  ul.footer li.footer-tel {
+    display: none; }
+
+ul.modal-hours li {
+  list-style: none; }
+
+@media only screen and (max-width: 800px) {
+  ul.topnav {
+    align-items: center; }
+    ul.topnav li:not(:nth-child(1)) {
+      display: none; }
+    ul.topnav li.logo {
+      margin: 0 auto; }
+    ul.topnav li.dropdownIcon {
+      display: block;
+      padding-right: 10px; }
+
+  ul.responsive {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    z-index: 9999; }
+    ul.responsive li {
+      display: inline;
+      list-style: none;
+      float: none; }
+      ul.responsive li a {
+        color: white;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        text-decoration: none; }
+
+  ul.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 10px; }
+
+  ul.footer li {
+    display: none; }
+
+  ul.footer li.footer-hours {
+    display: block; }
+  ul.footer li.footer-pin {
+    display: block; }
+  ul.footer li.footer-tel {
+    display: block; } }
+
+/*# sourceMappingURL=styles.css.map */

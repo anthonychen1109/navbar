@@ -128,4 +128,24 @@ ul.modal-hours {
     padding-right: $nav-padding;
   }
 
+// ################### FOOTER #####################
+
+  ul.footer {
+    li {
+      display: none;
+    }
+  }
+
+  ul.footer {
+    li.footer-hours {
+      display: block;
+    }
+    li.footer-pin {
+      display: block;
+    }
+    li.footer-tel {
+      display: block;
+    }
+  }
+
 }
